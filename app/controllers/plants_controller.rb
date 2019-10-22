@@ -12,7 +12,7 @@ class PlantsController < ApplicationController
     def create
         plant = Plant.new(plant_params)
         if plant.save
-            render json: plant
+            render json: {plant: plant}
         else
             render json: {errors: plant.errors.full_messages}
         end
