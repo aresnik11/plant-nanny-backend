@@ -10,7 +10,7 @@ class UsersController < ApplicationController
             token = JWT.encode({user: user.id}, "plants")
             render json: {user: user, token: token}, status: :created
         else
-            render json: { error: 'failed to create user' }, status: :not_acceptable
+            render json: {errors: user.errors.full_messages}, status: :not_acceptable
         end
     end
 
