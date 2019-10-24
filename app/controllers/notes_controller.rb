@@ -2,7 +2,7 @@ class NotesController < ApplicationController
     def create
         note = Note.new(note_params)
         if note.save
-            render json: {note: note}
+            render json: {note: NoteSerializer.new(note)}
         else
             render json: {errors: note.errors.full_messages}
         end
