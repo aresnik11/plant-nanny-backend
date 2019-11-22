@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   resources :users, only: [:create]
   resources :plants, only: [:create, :destroy]
   resources :notes, only: [:create, :destroy]
-  get '/autologin', to: 'auth#create'
+  get '/auto_login', to: 'auth#auto_login'
   post 'login', to: 'auth#login'
 end
