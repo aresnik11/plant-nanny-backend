@@ -4,7 +4,7 @@ class PlantsController < ApplicationController
         if plant.save
             render json: plant, status: :created
         else
-            render json: {errors: plant.errors.full_messages}. status: :not_acceptable
+            render json: {errors: plant.errors.full_messages}, status: :not_acceptable
         end
     end
 
