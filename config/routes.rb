@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :notes, only: [:create, :destroy]
   get '/auto_login', to: 'auth#auto_login'
   post 'login', to: 'auth#login'
+  get 'demo_login', to: 'auth#demo_login'
 end

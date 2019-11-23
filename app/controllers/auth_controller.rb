@@ -1,6 +1,6 @@
 class AuthController < ApplicationController
-    # not requiring user to be authorized to log into their account
-    skip_before_action :authorized, only: [:login]
+    # not requiring user to be authorized to log into their account or demo account
+    skip_before_action :authorized, only: [:login, :demo_login]
 
     def login
         user = User.find_by(name: user_login_params[:name])
@@ -13,6 +13,19 @@ class AuthController < ApplicationController
         # otherwise send back error
         else
             render json: { errors: "Invalid username or password" }, status: :unauthorized
+        end
+    end
+
+    def demo_login
+        # find the demo account
+        user = User.find_by(name: "demo")
+        if user
+            # encode the user id (function in application controller)
+            token = encode_token(user.id)
+            # send back a serialized user with the token
+            render json: { user: UserSerializer.new(user), token: token }
+        else
+            render json: { errors: "Unable to log in" }, status: :unauthorized
         end
     end
     
