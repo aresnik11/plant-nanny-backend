@@ -15,6 +15,22 @@ ActiveRecord::Schema.define(version: 2019_10_21_175858) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "cards", force: :cascade do |t|
+    t.string "color"
+    t.string "number"
+    t.string "shape"
+    t.string "fill"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.integer "score"
+    t.string "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "notes", force: :cascade do |t|
     t.bigint "plant_id"
     t.bigint "user_id"
