@@ -1,5 +1,7 @@
 # Plant Nanny
 
+*Developed by [Amy Resnik](https://github.com/aresnik11) and [Kunxi Griswold](https://github.com/kgriswo1).*
+
 Plant Nanny is a plant app for users to keep track of their plants and add notes about them.
 
 The backend repo is deployed via Heroku, and the frontend repo ([here](https://github.com/aresnik11/plant-nanny-frontend)) is deployed via Netlify. Visit the site at [https://plant-nanny.netlify.com](https://plant-nanny.netlify.com).
@@ -57,6 +59,7 @@ JWT_SECRET_KEY=test123
 6. In terminal run
 ```
 bundle install
+rails db:create
 rails db:migrate
 rails s
 ```
