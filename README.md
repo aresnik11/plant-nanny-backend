@@ -50,11 +50,17 @@ To test on your own machine:
 2. Switch to Ruby version `2.6.1`
 3. Make sure `postgreSQL` is running on your computer, if not, download and run it
 4. Create an `.env` file in the top level directory
-5. In the `.env` file, create a constant variable `JWT_SECRET_KEY` and set it equal to whatever you want your secret key to be. Ex: `JWT_SECRET_KEY=test123`
-6. In terminal run `bundle install`
-7. In terminal run `rails db:migrate`
-8. In terminal run `rails s` to start the Rails server
-9. Follow instructions [here](https://github.com/aresnik11/plant-nanny-frontend) to run the frontend
-10. You will need to update `config/initializers/cors.rb` to accept origin requests from wherever your frontend will be hosted
+5. In the `.env` file, create a constant variable `JWT_SECRET_KEY` and set it equal to whatever you want your secret key to be. Ex:
+```
+JWT_SECRET_KEY=test123
+```
+6. In terminal run
+```
+bundle install
+rails db:migrate
+rails s
+```
+7. Follow instructions [here](https://github.com/aresnik11/plant-nanny-frontend) to run the frontend
+8. You will need to update `config/initializers/cors.rb` to accept origin requests from wherever your frontend will be hosted
 
 ## Enjoy!
