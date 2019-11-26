@@ -1,24 +1,54 @@
-# README
+# Plant Nanny
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Plant Nanny is a plant app for users to keep track of their plants and add notes about them.
 
-Things you may want to cover:
+![Plant Nanny](https://user-images.githubusercontent.com/8761638/69591015-5bb54d00-0fbf-11ea-8bc3-47d08e74aac8.png)
 
-* Ruby version
+## Demo
 
-* System dependencies
+You can watch a live demo of the app [here](#) or visit the site at [https://plant-nanny.netlify.com](https://plant-nanny.netlify.com).
 
-* Configuration
+## Technology Used
 
-* Database creation
+* React
+* React Router
+* Semantic UI
+* Custom CSS
+* JWT Authentication
+* Ruby on Rails
+* PostgreSQL database
+* ActiveModel Serializer
 
-* Database initialization
+The GitHub repo for the frontend can be found [here](https://github.com/aresnik11/plant-nanny-frontend).
 
-* How to run the test suite
+## Features
 
-* Services (job queues, cache servers, search engines, etc.)
+Plant Nanny allows users to:
 
-* Deployment instructions
+* Create an account
+* Securely log in to an existing account
+* Add a new plant
+* Search through their plants
+* Add a new note associated with a plant
+* See notes associated with a specific plant
+* See all of their notes
+* Search through their notes
+* Delete a plant
+* Delete a note
+* Securely log out
 
-* ...
+## How To Use
+
+Visit the site at [https://plant-nanny.netlify.com](https://plant-nanny.netlify.com).
+
+To test on your own machine:
+1. Clone this repository
+2. Create an `.env` file in the top level directory
+3. In the `.env` file, create a constant variable `JWT_SECRET_KEY` and set it equal to whatever you want your secret key to be. Ex: `JWT_SECRET_KEY=test123`
+2. In terminal run `bundle install`
+3. In terminal run `rails db:migrate`
+5. In terminal run `rails s` to start the Rails server
+6. Follow instructions [here](https://github.com/aresnik11/plant-nanny-frontend) to run the frontend
+7. You will need to update `config/initializers/cors.rb` to accept origin requests from wherever your frontend will be hosted
+
+## Enjoy!
