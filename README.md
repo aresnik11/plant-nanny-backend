@@ -4,7 +4,7 @@
 
 Plant Nanny is a plant app for users to keep track of their plants and add notes about them.
 
-The backend repo is deployed via Heroku, and the frontend repo ([here](https://github.com/aresnik11/plant-nanny-frontend)) is deployed via Netlify. Visit the site at [https://plant-nanny.netlify.com](https://plant-nanny.netlify.com).
+The backend repo is deployed via Heroku, and the frontend repo ([here](https://github.com/aresnik11/plant-nanny-frontend)) is deployed via Netlify. Visit the site at [https://plant-nanny.netlify.app](https://plant-nanny.netlify.app).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/40d963ad-14c3-4fa3-ac2b-f529a7ce90a4/deploy-status)](https://app.netlify.com/sites/plant-nanny/deploys)
 
@@ -16,7 +16,7 @@ The backend repo is deployed via Heroku, and the frontend repo ([here](https://g
 " target="_blank"><img src="http://img.youtube.com/vi/mgBwnVsuJ-Q/0.jpg" 
 alt="Plant Nanny Demo" width="240" height="180" /></a>
 
-You can watch a live demo of the app [here](https://youtu.be/mgBwnVsuJ-Q) or visit the site at [https://plant-nanny.netlify.com](https://plant-nanny.netlify.com).
+You can watch a live demo of the app [here](https://youtu.be/mgBwnVsuJ-Q) or visit the site at [https://plant-nanny.netlify.app](https://plant-nanny.netlify.app).
 
 ## Technology Used
 
@@ -49,7 +49,7 @@ Plant Nanny allows users to:
 
 ## How To Use
 
-Visit the site at [https://plant-nanny.netlify.com](https://plant-nanny.netlify.com).
+Visit the site at [https://plant-nanny.netlify.app](https://plant-nanny.netlify.app).
 
 To test on your own machine:
 1. Clone this repository
